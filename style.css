@@ -6,17 +6,16 @@
 
 body{
     background-color: #eee;
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
 }
 
 .main-box{
     display: flex;
-    padding: 1rem;
 }
 
 .inner-box{
     flex-grow: 1;
-    text-align: center;
 }
 
 .output-header{
@@ -27,5 +26,6 @@ body{
     
     background-color: #fff;
     cursor:crosshair;
+    max-width: 600px;
 }
 

@@ -3,13 +3,13 @@ $(document).ready(() => {
     const canvas = $('#canvas')[0];
     const ctx = canvas.getContext("2d");
 
-    canvas.width = $('.input-box').width() * 0.6;
-    canvas.height = $('body').height() * 0.5;
+    // canvas.width = $('.input-box').width() * 1;
+    // canvas.height = $('body').height() * 0.5;
 
-    $(window).resize(function () { 
-       canvas.width = $('.input-box').width()* 0.6;
-       canvas.height = $('body').height() * 0.5;
-    });
+    // $(window).resize(function () { 
+    //    canvas.width = $('.input-box').width()*1;
+    //    canvas.height = $('body').height() * 0.5;
+    // });
    
     let painting = false;
 
