@@ -30,6 +30,12 @@ body{
     width: 250px;
     height: 250px;
     display: none;
-    margin: 1.5rem auto;
+    margin: 1.5rem auto ;
 }
+
+.action{
+    display: flex;
+    justify-content: center;
+}
+
 
