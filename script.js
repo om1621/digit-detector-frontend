@@ -19,12 +19,14 @@ $(document).ready(() => {
             return;
         }
 
-        ctx.lineWidth = 20;
+        const offset = $('#canvas').offset();
+
+        ctx.lineWidth = 15;
         ctx.lineCap='round'
-        ctx.lineTo(e.clientX, e.clientY);
+        ctx.lineTo(e.clientX - offset.left, e.clientY - offset.top);
         ctx.stroke(); 
         ctx.beginPath();
-        ctx.moveTo(e.clientX, e.clientY);
+        ctx.moveTo(e.clientX - offset.left, e.clientY - offset.top);
     }
 
     canvas.addEventListener('mousedown', (e) => {

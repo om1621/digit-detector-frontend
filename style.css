@@ -6,16 +6,7 @@
 
 body{
     background-color: #eee;
-    height: 100vh;
-    max-height: 100vh;
-}
-
-.main-box{
-    display: flex;
-}
-
-.inner-box{
-    flex-grow: 1;
+    min-height: 100vh;
 }
 
 .output-box{
@@ -30,12 +21,15 @@ body{
     background-color: #fff;
     cursor:crosshair;
     max-width: 600px;
+    height: 50vh;
+    margin: 0 auto;
+
 }
 
 .output-image{
     width: 250px;
     height: 250px;
     display: none;
-    margin-top: 1.5rem;
+    margin: 1.5rem auto;
 }
 
