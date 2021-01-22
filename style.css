@@ -18,14 +18,24 @@ body{
     flex-grow: 1;
 }
 
+.output-box{
+    padding: 1rem;
+}
+
 .output-header{
     text-align: center;
 }
 
 #canvas{
-    
     background-color: #fff;
     cursor:crosshair;
     max-width: 600px;
+}
+
+.output-image{
+    width: 250px;
+    height: 250px;
+    display: none;
+    margin-top: 1.5rem;
 }
 

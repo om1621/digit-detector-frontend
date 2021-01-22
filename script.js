@@ -19,7 +19,7 @@ $(document).ready(() => {
             return;
         }
 
-        ctx.lineWidth = 10;
+        ctx.lineWidth = 20;
         ctx.lineCap='round'
         ctx.lineTo(e.clientX, e.clientY);
         ctx.stroke(); 
@@ -35,7 +35,10 @@ $(document).ready(() => {
     canvas.addEventListener('mouseup', () => {
         painting = false;
         ctx.beginPath();
-        
+        const data = canvas.toDataURL();
+        $('.output-image').attr('src', data);
+        $('.output-image').css('display', 'block');
+
     })
 
     canvas.addEventListener('mousemove', (e) => {
